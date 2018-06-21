@@ -7,9 +7,15 @@
 //
 
 #include <iostream>
-
+#include "basic1.hpp"
+#include "basic2.hpp"
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+//    Basic1* basic1 = new Basic1();
+//    basic1->basic();
+//    delete basic1;
+    
+    Basic2 basic2 = Basic2();
+    basic2.basic();
+    
     return 0;
 }
