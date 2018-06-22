@@ -9,13 +9,16 @@
 #include <iostream>
 #include "basic1.hpp"
 #include "basic2.hpp"
+#include "basic3.hpp"
 int main(int argc, const char * argv[]) {
 //    Basic1* basic1 = new Basic1();
 //    basic1->basic();
 //    delete basic1;
     
-    Basic2 basic2 = Basic2();
-    basic2.basic();
-    
+//    Basic2 basic2;
+//    basic2.basic();
+
+    Basic3 basic3;
+    basic3.basic();
     return 0;
 }
