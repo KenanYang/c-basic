@@ -69,11 +69,23 @@ public:
     Line(); //contruct function **contructor cannot have a return type**
     Line(double len);
     Line(double len, double wid);
+//    copy constructors
+    //    classname(const classname &obj){...}
+    Line(const Line &obj);
     ~Line();//destructor, which cannot have a return type, as well as cannot have any parameters.
 private:
     double length;
     double width;
+    int *ptr;
 };
+
+Line::Line(const Line &obj){
+    cout << "Copy constructor allocating ptr"<<endl;
+    length = obj.length;
+    ptr = new int;
+    *ptr = *obj.ptr;
+}
+
 
 Line::Line(void){
     cout<<"Object has been created"<<endl;
@@ -82,6 +94,8 @@ Line::Line(void){
 Line::Line(double len){
     cout<<"Object has been created"<<endl;
     length = len;
+    ptr = new int;
+    *ptr = len;
 }
 //Use the initialize words to construct:
 Line::Line(double len, double wid): length(len),width(wid){
@@ -89,6 +103,7 @@ Line::Line(double len, double wid): length(len),width(wid){
 }
 Line::~Line(){
     cout<<"Object has been delete"<<endl;
+    delete ptr;
 }
 
 void Line::setLength(double len){
@@ -101,6 +116,9 @@ double Line::getWidth(){
     return width;
 }
 
+void display(Line obj){
+    cout<<"Length of line: "<<obj.getLength()<<endl;
+}
 int Basic3::basic(){
     
     Box Box1;
@@ -130,6 +148,8 @@ int Basic3::basic(){
     cout<<"Length of the line2 is: "<<line2.getLength()<<endl;
     Line line3(5.5, 6);
     cout<<"Length of the line3 is: "<<line3.getLength()<< " Width of the line3 is: "<< line3.getWidth()<<endl;
+    display(line2);
+    Line line4 = line2;
     
     return 0;
 }
