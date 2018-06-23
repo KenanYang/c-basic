@@ -11,6 +11,7 @@
 		30165BDB20DB64C20087FA58 /* basic2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30165BD920DB64C20087FA58 /* basic2.cpp */; };
 		30165BDE20DB67590087FA58 /* basic1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30165BDC20DB67590087FA58 /* basic1.cpp */; };
 		3092B70320DBB63E009110A0 /* basic3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3092B70120DBB63E009110A0 /* basic3.cpp */; };
+		3092B70620DDED05009110A0 /* basic4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3092B70420DDED05009110A0 /* basic4.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +35,8 @@
 		30165BDD20DB67590087FA58 /* basic1.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = basic1.hpp; sourceTree = "<group>"; };
 		3092B70120DBB63E009110A0 /* basic3.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = basic3.cpp; sourceTree = "<group>"; };
 		3092B70220DBB63E009110A0 /* basic3.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = basic3.hpp; sourceTree = "<group>"; };
+		3092B70420DDED05009110A0 /* basic4.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = basic4.cpp; sourceTree = "<group>"; };
+		3092B70520DDED05009110A0 /* basic4.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = basic4.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +76,8 @@
 				30165BDD20DB67590087FA58 /* basic1.hpp */,
 				3092B70120DBB63E009110A0 /* basic3.cpp */,
 				3092B70220DBB63E009110A0 /* basic3.hpp */,
+				3092B70420DDED05009110A0 /* basic4.cpp */,
+				3092B70520DDED05009110A0 /* basic4.hpp */,
 			);
 			path = basic;
 			sourceTree = "<group>";
@@ -136,6 +141,7 @@
 				3092B70320DBB63E009110A0 /* basic3.cpp in Sources */,
 				30165BD320DB337D0087FA58 /* main.cpp in Sources */,
 				30165BDB20DB64C20087FA58 /* basic2.cpp in Sources */,
+				3092B70620DDED05009110A0 /* basic4.cpp in Sources */,
 				30165BDE20DB67590087FA58 /* basic1.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
